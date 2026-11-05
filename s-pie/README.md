@@ -1,30 +1,61 @@
 # S-PIE trên ns-3.45
 
-## Chạy bằng script cấu hình
+## Các file trong thư mục và chức năng
 
-Sau khi chép cả thư mục vào `scratch/s-pie`, mở `run-simulation.sh` và sửa
-các biến trong phần **CẤU HÌNH**. Giá trị ban đầu khớp chương trình trên ns-3.45.
-Trong Ubuntu/WSL, từ gốc ns-3 chạy:
+| File | Chức năng | Khi nào cần đọc hoặc sửa |
+|---|---|---|
+| [`s-pie.cc`](s-pie.cc) | Chương trình mô phỏng chính có hàm `main()`: đọc tham số; tạo topology dumbbell, địa chỉ IP, nguồn ON/OFF và sink; chọn AQM; gắn bộ đo; lập lịch chạy và xuất goodput từng giây. Cũng đăng ký ánh xạ nguồn–đích sang flow ID và nhóm tải cho trace liên kết. | Thay topology, lịch nguồn, kịch bản, tham số chung hoặc bổ sung phép đo. |
+| [`spie-queue-disc.h`](spie-queue-disc.h) | Khai báo lớp `ns3::SpieQueueDisc`, các hàm xử lý queue, khóa luồng, bảng Sketch, timer và trạng thái điều khiển PIE. | Xem cấu trúc lớp, kiểu dữ liệu, đơn vị và thêm trạng thái/hàm mới. |
+| [`spie-queue-disc.cc`](spie-queue-disc.cc) | Cài đặt thuật toán S-PIE: khai báo attribute; enqueue/dequeue; đọc khóa 5-tuple; băm và truy vấn CMS; tính ngưỡng luồng lớn; cập nhật/reset Sketch; ước lượng trễ và cập nhật xác suất PIE. | Nghiên cứu hoặc sửa cơ chế thuật toán. Các hàm chính: `DoEnqueue`, `DoDequeue`, `CalculateP`, `ReadFlowKey`, `Bucket`, `Estimate`, `AboveThreshold`, `RecordAccepted`, `ResetWindow`. |
+| [`run-metrics.h`](run-metrics.h) | Khai báo lớp `RunMetrics`, giao diện gắn trace, đăng ký luồng và các stream xuất CSV. | Xem các phép đo được hỗ trợ; thêm giao diện thu dữ liệu. |
+| [`run-metrics.cc`](run-metrics.cc) | Thu trace queue, drop, LastRTT/SRTT, khung truyền trên bottleneck và cấu hình. Phân tích bản sao header PPP/IPv4/TCP để ghi flow/group vào link trace; ghi ánh xạ đã đăng ký vào config. | Sửa định dạng CSV, thêm trường đo hoặc kiểm tra nhận diện luồng. |
+| [`run-simulation.sh`](run-simulation.sh) | Điều phối batch: nhận tùy chọn Bash, cấu hình tham số, configure/build một lần, chạy nhiều job có giới hạn song song, chia folder scenario/run/AQM, ghi log và gọi `summarize.py`. | Chọn số run, kịch bản, số tiến trình, thuật toán, thư mục kết quả và bộ tham số thí nghiệm. |
+| [`summarize.py`](summarize.py) | Hậu xử lý **một run** từ raw CSV trong khoảng giây nguyên `[start,end)`: goodput tổng/nhóm, Jain, queue trung bình thời gian, LastRTT/SRTT trung bình sự kiện, wire rate và drop theo reason. In bảng metric/value ra stdout. Chỉ dùng thư viện chuẩn Python. | Tạo summary hoặc kiểm tra chỉ số của một khoảng đo; không vẽ hình và không gộp nhiều run. |
+| [`test_batch_runner.py`](test_batch_runner.py) | Kiểm thử script Bash bằng wrapper NS-3 giả trong thư mục tạm: số job, folder output, build một lần, giới hạn song song, dry-run, chống ghi đè, job lỗi và tham số dòng lệnh. | Kiểm tra bộ điều phối sau khi sửa script; không phải kiểm thử tính đúng đắn thuật toán S-PIE. |
+| [`README.md`](README.md) | Hướng dẫn các file, cách chạy, tham số, định nghĩa dữ liệu và kiểm chứng. | Điểm bắt đầu khi sử dụng hoặc bàn giao mã. |
 
-```bash
-bash scratch/s-pie/run-simulation.sh --dry-run
-bash scratch/s-pie/run-simulation.sh
+Các file `.cc`/`.h` được dùng để build chương trình mô phỏng. Shell và Python phục vụ chạy batch, tổng hợp và kiểm thử; không phải một phần của bộ điều khiển AQM.
+
+### Quan hệ giữa các file
+
+```text
+run-simulation.sh
+  ├─ configure/build chương trình s-pie
+  ├─ chạy s-pie.cc cho mỗi scenario/run/AQM
+  │    ├─ spie-queue-disc.h/.cc: xử lý S-PIE khi chọn aqm=Spie
+  │    ├─ AQM có sẵn trong NS-3 khi chọn Pie, Red, CoDel
+  │    └─ run-metrics.h/.cc: ghi raw trace và cấu hình
+  └─ summarize.py: đọc raw CSV, ghi summary của mỗi job
+
+test_batch_runner.py → kiểm tra run-simulation.sh bằng NS-3 giả
 ```
 
-Script tự configure/build một lần rồi chạy lần lượt `Spie`, `Pie`, `Red`, `CoDel`
-cho cùng `SCENARIO`, `RNG_SEED`, `RNG_RUN`. Kết quả nằm trong `result/` ở gốc
-ns-3, chia thành các thư mục `result/Spie/`, `result/Pie/`, `result/Red/`,
-`result/CoDel/`. Tên tệp dạng `s1-Spie-seed1-r1.csv`; các trace đi kèm
-và bảng tổng hợp được lưu cùng thư mục thuật toán. Mỗi thuật toán
-có thêm tệp `-summary.csv`. Chỉnh `ALGORITHMS` nếu chỉ muốn chạy một số AQM;
-đặt `WRITE_EVENTS=true` để ghi trace enqueue/drop bổ sung.
-`--dry-run` chỉ in bốn lệnh, không build/chạy. Đổi `RNG_RUN` cho lần lặp mới
-hoặc `RESULT_DIR` để giữ kết quả cũ; các tệp cùng tên bị ghi đè.
-Nếu để script ngoài cây ns-3, đặt `NS3_ROOT`
-thành đường dẫn gốc ns-3 và vẫn chép mã C++ vào `scratch/s-pie`.
-Các biến ngưỡng để trống giữ nguyên `Time::Max()` từ C++.
-Các giá trị đang cố định trong C++ được liệt kê ngay trước phần thực thi;
-script không cung cấp biến giả cho các giá trị chưa có tùy chọn dòng lệnh.
+Đọc mã theo thứ tự `s-pie.cc` → `spie-queue-disc.h/.cc` → `run-metrics.h/.cc` để hiểu mô hình, thuật toán và phép đo. Để chạy thí nghiệm, bắt đầu từ `run-simulation.sh`.
+
+### Phân biệt hai loại nhãn luồng
+
+`small`/`large` trong trace là **nhóm nguồn cấu hình của kịch bản 1** (nửa đầu/nửa sau); scenario 2 dùng `equal`. Nhóm này phục vụ phân tích throughput. Quyết định luồng lớn của Sketch được tính động từ tần suất gói trong cửa sổ và không lấy nhãn nhóm cấu hình làm đầu vào.
+
+Phải chép đồng bộ `s-pie.cc`, `run-metrics.cc` và `run-metrics.h` vào cây NS-3 khi cập nhật nhận diện luồng. `RegisterFlow()` cần được gọi trước khi truyền. Mã hiện tại dừng sớm nếu chưa đăng ký luồng nào; các ánh xạ được ghi dưới khóa `flow.<id>.*` trong config.
+
+## Chạy bằng script cấu hình
+
+Chép cả thư mục vào `scratch/s-pie` của NS-3.45. Trong Ubuntu/WSL, từ gốc NS-3 chạy:
+
+```bash
+# Xem trợ giúp hoặc kiểm tra các lệnh dự kiến
+bash scratch/s-pie/run-simulation.sh --help
+bash scratch/s-pie/run-simulation.sh --scenario 1 --runs 3 --dry-run
+
+# 3 run cho kịch bản 1; tối đa 2 job đồng thời
+bash scratch/s-pie/run-simulation.sh --scenario 1 --runs 3 --parallel 2
+```
+
+Mỗi job là một tổ hợp scenario/run/AQM. Script configure/build một lần rồi dùng `ns3 run --no-build` cho các job. Mặc định trong file là `SCENARIOS=(1 2)`, `RNG_RUNS=(1 2 3)`, bốn AQM và `MAX_PARALLEL=2`; tùy chọn dòng lệnh ghi đè cho lần gọi hiện tại. Nếu đã có kết quả, chọn `--start-run` mới hoặc một `--result-dir` khác.
+
+Output mỗi job nằm trong `result/scenario_<số>_run_<số>/<AQM>/`, gồm raw CSV, summary và log riêng. `OVERWRITE=false` chặn ghi đè CSV cùng tiền tố. `--dry-run` chỉ in lệnh, không build/chạy. Chỉnh các biến đầu file để đổi tham số chi tiết; xem các mục batch bên dưới cho đầy đủ tùy chọn.
+
+Nếu script nằm ngoài cây NS-3, đặt `NS3_ROOT` đúng đường dẫn gốc NS-3 và vẫn chép mã C++ vào `scratch/s-pie`. Các biến ngưỡng để trống giữ `Time::Max()`; các giá trị chưa có tùy chọn C++ được liệt kê trong script.
 
 ## Chạy lần đầu
 
@@ -95,8 +126,8 @@ Ví dụ chọn `--output=s1-spie.csv`. Thư mục chứa tệp phải tồn t�
 | `s1-spie-queue.csv` | Occupancy của qdisc chiều Router1 → Router2 sau mỗi enqueue/dequeue, theo gói và byte. Có trạng thái ban đầu và mốc kết thúc. Lấy tổng `Q × thời gian duy trì Q` chia cho độ dài cửa sổ. |
 | `s1-spie-rtt.csv` | ID luồng, thời điểm và giá trị ns của mỗi **thay đổi** LastRTT (mẫu RTT) hoặc RTT (SRTT). Tách hai chuỗi khi thống kê. Luồng không có mẫu trong cửa sổ không có RTT trung bình. |
 | `s1-spie-drops.csv` | Mỗi sự kiện loại gói ghi vị trí, lớp, giai đoạn xử lý, lý do gốc, UID và kích thước. Lọc `core-forward,qdisc` để lấy drop của thuật toán. PIE/S-PIE dùng `Forced drop` cho tràn hàng; với RED, forced là quyết định AQM, còn tràn hàng ở cấu hình này mang lý do `Dropped by internal queue`. CoDel tách `Overlimit drop` và `Target exceeded drop`. |
-| `s1-spie-link.csv` | Mỗi khung bắt đầu phát trên bottleneck chiều đi, gồm số byte trên liên kết (cả header). Tốc độ phát theo cửa sổ bằng tổng số byte nhân 8 chia cho số giây. Khung cắt qua biên cửa sổ được tính trọn theo thời điểm bắt đầu phát. |
-| `s1-spie-config.csv` | Kịch bản, seed/run, tốc độ, thời gian, phân phối ON/OFF, tham số của qdisc, TCP và Sketch trong lần chạy. |
+| `s1-spie-link.csv` | Mỗi khung bắt đầu phát trên bottleneck chiều đi: thời gian, phase, wire_bytes, flow, group, IP nguồn/đích, giao thức và cổng. Gồm header, TCP control và tái truyền. Throughput = tổng byte / thời gian / 10^6 (10^6 byte/s), hoặc nhân thêm 8 để ra Mbps. Khung cắt biên được tính trọn tại thời điểm bắt đầu phát. Gói chưa nhận diện có flow=0, group=unknown. |
+| `s1-spie-config.csv` | Kịch bản, seed/run, tốc độ, thời gian, phân phối ON/OFF, tham số qdisc/TCP/Sketch và ánh xạ `flow.<id>.*` được đăng ký trong lần chạy. |
 
 Trong các trace có cột `phase`, thời điểm từ 0 đến trước khi nguồn dừng thuộc `traffic`; các sự kiện tại và sau mốc dừng thuộc `drain`. CSV goodput vẫn chỉ chứa các cửa sổ phát. Để tổng hợp bằng Python chuẩn, chạy từ thư mục gốc ns-3:
 
@@ -107,7 +138,9 @@ python3 scratch/s-pie/summarize.py s1-spie.csv --start 5 --end 20
 
 Chương trình tính Jain từ tổng byte **từng luồng trong khoảng đã chọn**, gồm cả luồng 0 byte. Để vẽ chuỗi Jain từng giây, chọn lần lượt từng khoảng 1 s. Trung bình RTT trong tệp tổng hợp đặt trọng số bằng nhau cho mỗi sự kiện thay đổi. Dùng dữ liệu thô theo flow nếu cần đặt trọng số bằng nhau cho mỗi luồng. Khi làm thống kê nhiều lần lặp, tính chỉ tiêu cho từng run trước rồi mới tổng hợp giữa các run.
 
-## Kiểm chứng bản bàn giao
+## Kiểm chứng bản bàn giao ban đầu
+
+Các kết quả dưới đây là lịch sử kiểm chứng bản ban đầu, không xác nhận mọi chỉnh sửa trace/batch sau đó đã được build lại trên NS-3. Các sửa đổi thu trace gần đây cần được build trong môi trường mô phỏng thực tế.
 
 Đã build với Clang 20.1.3 trên Windows từ tag ns-3.45. Cả tám tổ hợp của hai kịch bản và bốn thuật toán chạy hết với 100 luồng, 30 s phát và 5 s xả hàng đợi, một run cho mỗi tổ hợp.
 
