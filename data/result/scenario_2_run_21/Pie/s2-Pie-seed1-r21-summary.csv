@@ -1,0 +1,20 @@
+metric,value
+scenario,2
+aqm,Pie
+seed,1
+run,21
+start_s,0
+end_s,30
+goodput_mbps,46.663466666666665
+jain,0.9768601513400761
+mean_queue_packets,32.5805160115
+mean_queue_bytes,34274.69863236466
+last_rtt_samples,55665
+last_rtt_mean_ms,85.62894098625708
+srtt_samples,76867
+srtt_mean_ms,80.5206520966995
+forward_wire_mbps,49.25542293333333
+forward_qdisc_drops,5500
+other_queue_drops,0
+drop: Forced drop,5497
+drop: Unforced drop,3

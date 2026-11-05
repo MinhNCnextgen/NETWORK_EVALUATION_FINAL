@@ -1,0 +1,20 @@
+metric,value
+scenario,2
+aqm,CoDel
+seed,1
+run,8
+start_s,0
+end_s,30
+goodput_mbps,46.5576
+jain,0.9661566803501596
+mean_queue_packets,32.638957149633335
+mean_queue_bytes,34336.17553298093
+last_rtt_samples,55600
+last_rtt_mean_ms,85.250845323741
+srtt_samples,76758
+srtt_mean_ms,80.22907782537325
+forward_wire_mbps,49.16941653333333
+forward_qdisc_drops,5521
+other_queue_drops,0
+drop: Overlimit drop,5289
+drop: Target exceeded drop,232

@@ -1,0 +1,38 @@
+s-pie --scenario=1 --aqm=Spie --flows=100 --duration=30 --payload=1000 --smallRate=1Mbps --largeRate=50Mbps --equalRate=10Mbps '--onTime=ns3::ExponentialRandomVariable[Mean=1]' '--offTime=ns3::ExponentialRandomVariable[Mean=1]' --accessRate=100Mbps --accessDelay=5ms --coreRate=50Mbps --coreDelay=20ms --limit=50p --output=result/scenario_1_run_25/Spie/s1-Spie-seed1-r25.csv --RngSeed=1 --RngRun=25 --ns3::SpieQueueDisc::SketchEnabled=true --ns3::SpieQueueDisc::SketchRows=4 --ns3::SpieQueueDisc::SketchWidth=1024 --ns3::SpieQueueDisc::SketchWindow=500ms --ns3::SpieQueueDisc::HashSeed=1 --ns3::SpieQueueDisc::DelayDivisor=3 --ns3::SpieQueueDisc::A=0.125 --ns3::SpieQueueDisc::B=1.25 --ns3::SpieQueueDisc::QueueDelayReference=5ms --ns3::SpieQueueDisc::Tupdate=30ms --ns3::SpieQueueDisc::Supdate=0s --ns3::SpieQueueDisc::DequeueThreshold=10000 --ns3::SpieQueueDisc::MaxBurstAllowance=100ms --ns3::SpieQueueDisc::MeanPktSize=1000 --ns3::SpieQueueDisc::UseDequeueRateEstimator=true --ns3::SpieQueueDisc::UseCapDropAdjustment=true --ns3::SpieQueueDisc::UseDerandomization=false --ns3::SpieQueueDisc::UseEcn=false --ns3::SpieQueueDisc::MarkEcnThreshold=0.1 --ns3::SpieQueueDisc::UseL4s=false --ns3::TcpL4Protocol::SocketType=ns3::TcpNewReno --ns3::TcpL4Protocol::RecoveryType=ns3::TcpPrrRecovery --ns3::TcpSocket::SegmentSize=1000 --ns3::TcpSocket::InitialCwnd=10 --ns3::TcpSocket::SndBufSize=131072 --ns3::TcpSocket::RcvBufSize=131072 --ns3::TcpSocket::DelAckCount=2 --ns3::TcpSocket::DelAckTimeout=200ms --ns3::TcpSocketBase::UseEcn=Off
+
+Packets/Bytes received: 172761 / 181436972
+Packets/Bytes enqueued: 161165 / 169238980
+Packets/Bytes dequeued: 161165 / 169238980
+Packets/Bytes requeued: 0 / 0
+Packets/Bytes dropped: 11596 / 12197992
+Packets/Bytes dropped before enqueue: 11596 / 12197992
+  Forced drop: 260 / 273520
+  Sketch large-flow drop: 11336 / 11924472
+Packets/Bytes dropped after dequeue: 0 / 0
+Packets/Bytes sent: 161165 / 169238980
+Packets/Bytes marked: 0 / 0
+
+
+Đã chạy xong. Goodput: result/scenario_1_run_25/Spie/s1-Spie-seed1-r25.csv
+metric,value
+scenario,1
+aqm,Spie
+seed,1
+run,25
+start_s,0
+end_s,30
+goodput_mbps,40.392
+jain,0.9779640119610601
+small_goodput_mbps,18.424533333333333
+large_goodput_mbps,21.967466666666667
+mean_queue_packets,6.3399626226666665
+mean_queue_bytes,6669.640679045333
+last_rtt_samples,50206
+last_rtt_mean_ms,79.45699717165279
+srtt_samples,72765
+srtt_mean_ms,74.52819065119219
+forward_wire_mbps,42.62758986666667
+forward_qdisc_drops,11286
+other_queue_drops,0
+drop: Forced drop,260
+drop: Sketch large-flow drop,11026

@@ -1,0 +1,1117 @@
+{
+  "inputs": [
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_1\\CoDel\\s2-CoDel-seed1-r1-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_1\\Pie\\s2-Pie-seed1-r1-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_1\\Red\\s2-Red-seed1-r1-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_1\\Spie\\s2-Spie-seed1-r1-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_10\\CoDel\\s2-CoDel-seed1-r10-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_10\\Pie\\s2-Pie-seed1-r10-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_10\\Red\\s2-Red-seed1-r10-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_10\\Spie\\s2-Spie-seed1-r10-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_11\\CoDel\\s2-CoDel-seed1-r11-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_11\\Pie\\s2-Pie-seed1-r11-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_11\\Red\\s2-Red-seed1-r11-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_11\\Spie\\s2-Spie-seed1-r11-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_12\\CoDel\\s2-CoDel-seed1-r12-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_12\\Pie\\s2-Pie-seed1-r12-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_12\\Red\\s2-Red-seed1-r12-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_12\\Spie\\s2-Spie-seed1-r12-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_13\\CoDel\\s2-CoDel-seed1-r13-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_13\\Pie\\s2-Pie-seed1-r13-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_13\\Red\\s2-Red-seed1-r13-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_13\\Spie\\s2-Spie-seed1-r13-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_14\\CoDel\\s2-CoDel-seed1-r14-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_14\\Pie\\s2-Pie-seed1-r14-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_14\\Red\\s2-Red-seed1-r14-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_14\\Spie\\s2-Spie-seed1-r14-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_15\\CoDel\\s2-CoDel-seed1-r15-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_15\\Pie\\s2-Pie-seed1-r15-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_15\\Red\\s2-Red-seed1-r15-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_15\\Spie\\s2-Spie-seed1-r15-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_16\\CoDel\\s2-CoDel-seed1-r16-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_16\\Pie\\s2-Pie-seed1-r16-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_16\\Red\\s2-Red-seed1-r16-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_16\\Spie\\s2-Spie-seed1-r16-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_17\\CoDel\\s2-CoDel-seed1-r17-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_17\\Pie\\s2-Pie-seed1-r17-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_17\\Red\\s2-Red-seed1-r17-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_17\\Spie\\s2-Spie-seed1-r17-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_18\\CoDel\\s2-CoDel-seed1-r18-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_18\\Pie\\s2-Pie-seed1-r18-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_18\\Red\\s2-Red-seed1-r18-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_18\\Spie\\s2-Spie-seed1-r18-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_19\\CoDel\\s2-CoDel-seed1-r19-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_19\\Pie\\s2-Pie-seed1-r19-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_19\\Red\\s2-Red-seed1-r19-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_19\\Spie\\s2-Spie-seed1-r19-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_2\\CoDel\\s2-CoDel-seed1-r2-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_2\\Pie\\s2-Pie-seed1-r2-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_2\\Red\\s2-Red-seed1-r2-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_2\\Spie\\s2-Spie-seed1-r2-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_20\\CoDel\\s2-CoDel-seed1-r20-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_20\\Pie\\s2-Pie-seed1-r20-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_20\\Red\\s2-Red-seed1-r20-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_20\\Spie\\s2-Spie-seed1-r20-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_21\\CoDel\\s2-CoDel-seed1-r21-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_21\\Pie\\s2-Pie-seed1-r21-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_21\\Red\\s2-Red-seed1-r21-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_21\\Spie\\s2-Spie-seed1-r21-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_22\\CoDel\\s2-CoDel-seed1-r22-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_22\\Pie\\s2-Pie-seed1-r22-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_22\\Red\\s2-Red-seed1-r22-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_22\\Spie\\s2-Spie-seed1-r22-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_23\\CoDel\\s2-CoDel-seed1-r23-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_23\\Pie\\s2-Pie-seed1-r23-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_23\\Red\\s2-Red-seed1-r23-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_23\\Spie\\s2-Spie-seed1-r23-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_24\\CoDel\\s2-CoDel-seed1-r24-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_24\\Pie\\s2-Pie-seed1-r24-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_24\\Red\\s2-Red-seed1-r24-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_24\\Spie\\s2-Spie-seed1-r24-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_25\\CoDel\\s2-CoDel-seed1-r25-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_25\\Pie\\s2-Pie-seed1-r25-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_25\\Red\\s2-Red-seed1-r25-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_25\\Spie\\s2-Spie-seed1-r25-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_26\\CoDel\\s2-CoDel-seed1-r26-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_26\\Pie\\s2-Pie-seed1-r26-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_26\\Red\\s2-Red-seed1-r26-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_26\\Spie\\s2-Spie-seed1-r26-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_27\\CoDel\\s2-CoDel-seed1-r27-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_27\\Pie\\s2-Pie-seed1-r27-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_27\\Red\\s2-Red-seed1-r27-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_27\\Spie\\s2-Spie-seed1-r27-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_28\\CoDel\\s2-CoDel-seed1-r28-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_28\\Pie\\s2-Pie-seed1-r28-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_28\\Red\\s2-Red-seed1-r28-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_28\\Spie\\s2-Spie-seed1-r28-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_29\\CoDel\\s2-CoDel-seed1-r29-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_29\\Pie\\s2-Pie-seed1-r29-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_29\\Red\\s2-Red-seed1-r29-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_29\\Spie\\s2-Spie-seed1-r29-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_3\\CoDel\\s2-CoDel-seed1-r3-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_3\\Pie\\s2-Pie-seed1-r3-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_3\\Red\\s2-Red-seed1-r3-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_3\\Spie\\s2-Spie-seed1-r3-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_30\\CoDel\\s2-CoDel-seed1-r30-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_30\\Pie\\s2-Pie-seed1-r30-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_30\\Red\\s2-Red-seed1-r30-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_30\\Spie\\s2-Spie-seed1-r30-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_4\\CoDel\\s2-CoDel-seed1-r4-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_4\\Pie\\s2-Pie-seed1-r4-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_4\\Red\\s2-Red-seed1-r4-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_4\\Spie\\s2-Spie-seed1-r4-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_5\\CoDel\\s2-CoDel-seed1-r5-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_5\\Pie\\s2-Pie-seed1-r5-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_5\\Red\\s2-Red-seed1-r5-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_5\\Spie\\s2-Spie-seed1-r5-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_6\\CoDel\\s2-CoDel-seed1-r6-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_6\\Pie\\s2-Pie-seed1-r6-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_6\\Red\\s2-Red-seed1-r6-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_6\\Spie\\s2-Spie-seed1-r6-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_7\\CoDel\\s2-CoDel-seed1-r7-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_7\\Pie\\s2-Pie-seed1-r7-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_7\\Red\\s2-Red-seed1-r7-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_7\\Spie\\s2-Spie-seed1-r7-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_8\\CoDel\\s2-CoDel-seed1-r8-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_8\\Pie\\s2-Pie-seed1-r8-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_8\\Red\\s2-Red-seed1-r8-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_8\\Spie\\s2-Spie-seed1-r8-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_9\\CoDel\\s2-CoDel-seed1-r9-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_9\\Pie\\s2-Pie-seed1-r9-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_9\\Red\\s2-Red-seed1-r9-config.csv",
+    "C:\\Users\\PC\\Documents\\ChatGPT\\Báo cáo bài báo NS3\\data\\result\\scenario_2_run_9\\Spie\\s2-Spie-seed1-r9-config.csv"
+  ],
+  "figures": [
+    "scenario_2_queue_packets_1s.png",
+    "scenario_2_rtt_samples.png",
+    "scenario_2_jain_window.png",
+    "scenario_2_throughput_bars_window.png",
+    "scenario_2_jain_cumulative.png",
+    "scenario_2_throughput_bars_cumulative.png",
+    "scenario_2_throughput_across_runs.png",
+    "scenario_2_total_throughput_window.png",
+    "scenario_2_total_throughput_cumulative.png",
+    "scenario_2_overflow_drops.png",
+    "scenario_2_active_drops.png",
+    "scenario_2_goodput_1s.png",
+    "scenario_2_link_throughput_mbps_1s.png",
+    "scenario_2_queue_bytes_1s.png",
+    "scenario_2_srtt_1s.png",
+    "scenario_2_jain_1s.png"
+  ],
+  "messages": [
+    "Scenario 1: unavailable; corresponding paper figures skipped."
+  ],
+  "period_s": 5,
+  "units": "Link throughput: 10^6 byte/s; goodput: Mbps; packets; milliseconds",
+  "rtt": "LastRTT change events",
+  "throughput_source": "link.csv wire_bytes at forward bottleneck PhyTxBegin; frame counted at transmission start",
+  "flow_recovery": [
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 1,
+      "recovered_frames": 185077,
+      "recovered_bytes": 194759558
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 1,
+      "recovered_frames": 184832,
+      "recovered_bytes": 194504328
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 1,
+      "recovered_frames": 167041,
+      "recovered_bytes": 175750614
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 1,
+      "recovered_frames": 161345,
+      "recovered_bytes": 169747030
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 10,
+      "recovered_frames": 185076,
+      "recovered_bytes": 194758504
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 10,
+      "recovered_frames": 185862,
+      "recovered_bytes": 195589948
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 10,
+      "recovered_frames": 166628,
+      "recovered_bytes": 175321312
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 10,
+      "recovered_frames": 160575,
+      "recovered_bytes": 168938450
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 11,
+      "recovered_frames": 184975,
+      "recovered_bytes": 194658050
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 11,
+      "recovered_frames": 185123,
+      "recovered_bytes": 194815042
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 11,
+      "recovered_frames": 165806,
+      "recovered_bytes": 174455924
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 11,
+      "recovered_frames": 159932,
+      "recovered_bytes": 168263728
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 12,
+      "recovered_frames": 185561,
+      "recovered_bytes": 195273694
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 12,
+      "recovered_frames": 185982,
+      "recovered_bytes": 195715428
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 12,
+      "recovered_frames": 168007,
+      "recovered_bytes": 176773778
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 12,
+      "recovered_frames": 160701,
+      "recovered_bytes": 169071254
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 13,
+      "recovered_frames": 184233,
+      "recovered_bytes": 193863982
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 13,
+      "recovered_frames": 184600,
+      "recovered_bytes": 194260800
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 13,
+      "recovered_frames": 167104,
+      "recovered_bytes": 175810016
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 13,
+      "recovered_frames": 160035,
+      "recovered_bytes": 168365290
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 14,
+      "recovered_frames": 184344,
+      "recovered_bytes": 193984976
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 14,
+      "recovered_frames": 184879,
+      "recovered_bytes": 194555866
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 14,
+      "recovered_frames": 166358,
+      "recovered_bytes": 175031732
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 14,
+      "recovered_frames": 160651,
+      "recovered_bytes": 169018554
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 15,
+      "recovered_frames": 185371,
+      "recovered_bytes": 195073434
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 15,
+      "recovered_frames": 185235,
+      "recovered_bytes": 194925090
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 15,
+      "recovered_frames": 166834,
+      "recovered_bytes": 175542436
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 15,
+      "recovered_frames": 160433,
+      "recovered_bytes": 168794782
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 16,
+      "recovered_frames": 186472,
+      "recovered_bytes": 196234888
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 16,
+      "recovered_frames": 186358,
+      "recovered_bytes": 196117732
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 16,
+      "recovered_frames": 169780,
+      "recovered_bytes": 178643520
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 16,
+      "recovered_frames": 162619,
+      "recovered_bytes": 171099826
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 17,
+      "recovered_frames": 184931,
+      "recovered_bytes": 194611674
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 17,
+      "recovered_frames": 184949,
+      "recovered_bytes": 194629646
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 17,
+      "recovered_frames": 167168,
+      "recovered_bytes": 175889472
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 17,
+      "recovered_frames": 160403,
+      "recovered_bytes": 168765162
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 18,
+      "recovered_frames": 185849,
+      "recovered_bytes": 195583246
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 18,
+      "recovered_frames": 185868,
+      "recovered_bytes": 195597272
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 18,
+      "recovered_frames": 167673,
+      "recovered_bytes": 176421742
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 18,
+      "recovered_frames": 160122,
+      "recovered_bytes": 168465988
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 19,
+      "recovered_frames": 185256,
+      "recovered_bytes": 194953224
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 19,
+      "recovered_frames": 185414,
+      "recovered_bytes": 195119756
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 19,
+      "recovered_frames": 166339,
+      "recovered_bytes": 175020706
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 19,
+      "recovered_frames": 160824,
+      "recovered_bytes": 169204896
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 2,
+      "recovered_frames": 184915,
+      "recovered_bytes": 194589810
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 2,
+      "recovered_frames": 185818,
+      "recovered_bytes": 195545572
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 2,
+      "recovered_frames": 167575,
+      "recovered_bytes": 176320450
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 2,
+      "recovered_frames": 160799,
+      "recovered_bytes": 169178546
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 20,
+      "recovered_frames": 185069,
+      "recovered_bytes": 194755126
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 20,
+      "recovered_frames": 185021,
+      "recovered_bytes": 194701534
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 20,
+      "recovered_frames": 165736,
+      "recovered_bytes": 174379144
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 20,
+      "recovered_frames": 161260,
+      "recovered_bytes": 169660440
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 21,
+      "recovered_frames": 185082,
+      "recovered_bytes": 194772828
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 21,
+      "recovered_frames": 184980,
+      "recovered_bytes": 194658320
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 21,
+      "recovered_frames": 165958,
+      "recovered_bytes": 174615132
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 21,
+      "recovered_frames": 163539,
+      "recovered_bytes": 172063506
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 22,
+      "recovered_frames": 184671,
+      "recovered_bytes": 194337634
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 22,
+      "recovered_frames": 184221,
+      "recovered_bytes": 193861334
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 22,
+      "recovered_frames": 166938,
+      "recovered_bytes": 175649052
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 22,
+      "recovered_frames": 160873,
+      "recovered_bytes": 169258542
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 23,
+      "recovered_frames": 185385,
+      "recovered_bytes": 195088190
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 23,
+      "recovered_frames": 185226,
+      "recovered_bytes": 194924604
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 23,
+      "recovered_frames": 167306,
+      "recovered_bytes": 176034924
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 23,
+      "recovered_frames": 162571,
+      "recovered_bytes": 171048234
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 24,
+      "recovered_frames": 186718,
+      "recovered_bytes": 196496172
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 24,
+      "recovered_frames": 185967,
+      "recovered_bytes": 195704618
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 24,
+      "recovered_frames": 167980,
+      "recovered_bytes": 176748320
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 24,
+      "recovered_frames": 160198,
+      "recovered_bytes": 168547092
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 25,
+      "recovered_frames": 185519,
+      "recovered_bytes": 195234426
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 25,
+      "recovered_frames": 185737,
+      "recovered_bytes": 195464198
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 25,
+      "recovered_frames": 167696,
+      "recovered_bytes": 176447984
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 25,
+      "recovered_frames": 161832,
+      "recovered_bytes": 170274328
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 26,
+      "recovered_frames": 184918,
+      "recovered_bytes": 194592972
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 26,
+      "recovered_frames": 185048,
+      "recovered_bytes": 194729992
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 26,
+      "recovered_frames": 167090,
+      "recovered_bytes": 175807260
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 26,
+      "recovered_frames": 161485,
+      "recovered_bytes": 169900590
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 27,
+      "recovered_frames": 185466,
+      "recovered_bytes": 195169564
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 27,
+      "recovered_frames": 185855,
+      "recovered_bytes": 195583570
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 27,
+      "recovered_frames": 167439,
+      "recovered_bytes": 176172106
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 27,
+      "recovered_frames": 161211,
+      "recovered_bytes": 169610794
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 28,
+      "recovered_frames": 185059,
+      "recovered_bytes": 194742586
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 28,
+      "recovered_frames": 184889,
+      "recovered_bytes": 194563406
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 28,
+      "recovered_frames": 167116,
+      "recovered_bytes": 175831664
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 28,
+      "recovered_frames": 160808,
+      "recovered_bytes": 169182032
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 29,
+      "recovered_frames": 185469,
+      "recovered_bytes": 195172726
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 29,
+      "recovered_frames": 185923,
+      "recovered_bytes": 195655242
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 29,
+      "recovered_frames": 165609,
+      "recovered_bytes": 174242286
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 29,
+      "recovered_frames": 161857,
+      "recovered_bytes": 170295678
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 3,
+      "recovered_frames": 184392,
+      "recovered_bytes": 194040568
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 3,
+      "recovered_frames": 184932,
+      "recovered_bytes": 194609728
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 3,
+      "recovered_frames": 166756,
+      "recovered_bytes": 175452224
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 3,
+      "recovered_frames": 158279,
+      "recovered_bytes": 166516466
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 30,
+      "recovered_frames": 185158,
+      "recovered_bytes": 194847932
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 30,
+      "recovered_frames": 185815,
+      "recovered_bytes": 195541410
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 30,
+      "recovered_frames": 166023,
+      "recovered_bytes": 174682642
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 30,
+      "recovered_frames": 159604,
+      "recovered_bytes": 167919016
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 4,
+      "recovered_frames": 184349,
+      "recovered_bytes": 194003246
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 4,
+      "recovered_frames": 184548,
+      "recovered_bytes": 194199992
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 4,
+      "recovered_frames": 165820,
+      "recovered_bytes": 174465680
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 4,
+      "recovered_frames": 160496,
+      "recovered_bytes": 168851184
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 5,
+      "recovered_frames": 185350,
+      "recovered_bytes": 195050300
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 5,
+      "recovered_frames": 186158,
+      "recovered_bytes": 195909932
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 5,
+      "recovered_frames": 167247,
+      "recovered_bytes": 175973738
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 5,
+      "recovered_frames": 162509,
+      "recovered_bytes": 170980886
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 6,
+      "recovered_frames": 185261,
+      "recovered_bytes": 194953494
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 6,
+      "recovered_frames": 185505,
+      "recovered_bytes": 195214670
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 6,
+      "recovered_frames": 167424,
+      "recovered_bytes": 176160296
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 6,
+      "recovered_frames": 161913,
+      "recovered_bytes": 170352702
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 7,
+      "recovered_frames": 185194,
+      "recovered_bytes": 194887876
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 7,
+      "recovered_frames": 185754,
+      "recovered_bytes": 195480116
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 7,
+      "recovered_frames": 168077,
+      "recovered_bytes": 176849558
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 7,
+      "recovered_frames": 161424,
+      "recovered_bytes": 169838296
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 8,
+      "recovered_frames": 184945,
+      "recovered_bytes": 194626430
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 8,
+      "recovered_frames": 185655,
+      "recovered_bytes": 195372770
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 8,
+      "recovered_frames": 166309,
+      "recovered_bytes": 174984086
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 8,
+      "recovered_frames": 161295,
+      "recovered_bytes": 169704330
+    },
+    {
+      "scenario": 2,
+      "aqm": "CoDel",
+      "seed": 1,
+      "run": 9,
+      "recovered_frames": 185166,
+      "recovered_bytes": 194861364
+    },
+    {
+      "scenario": 2,
+      "aqm": "Pie",
+      "seed": 1,
+      "run": 9,
+      "recovered_frames": 185491,
+      "recovered_bytes": 195196914
+    },
+    {
+      "scenario": 2,
+      "aqm": "Red",
+      "seed": 1,
+      "run": 9,
+      "recovered_frames": 166460,
+      "recovered_bytes": 175145240
+    },
+    {
+      "scenario": 2,
+      "aqm": "Spie",
+      "seed": 1,
+      "run": 9,
+      "recovered_frames": 160280,
+      "recovered_bytes": 168630520
+    }
+  ],
+  "notes": [
+    "Simulation results only; no digitized paper curves.",
+    "Queue time mean differs from paper EWMA; throughput window unspecified in paper.",
+    "Drain excluded. Run-level metrics calculated before aggregation. No confidence intervals.",
+    "Link throughput matches the paper axis units but is not established as the same measurement layer."
+  ]
+}

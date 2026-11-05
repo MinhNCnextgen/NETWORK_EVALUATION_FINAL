@@ -1,0 +1,22 @@
+metric,value
+scenario,1
+aqm,Spie
+seed,1
+run,20
+start_s,0
+end_s,30
+goodput_mbps,40.714933333333335
+jain,0.9832343994964508
+small_goodput_mbps,19.2096
+large_goodput_mbps,21.505333333333333
+mean_queue_packets,5.9797471345333335
+mean_queue_bytes,6290.6721442624
+last_rtt_samples,51049
+last_rtt_mean_ms,78.86031068189386
+srtt_samples,73844
+srtt_mean_ms,74.16064765855046
+forward_wire_mbps,42.96936693333333
+forward_qdisc_drops,10910
+other_queue_drops,0
+drop: Forced drop,127
+drop: Sketch large-flow drop,10783

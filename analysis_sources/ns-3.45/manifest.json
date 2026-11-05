@@ -1,0 +1,65 @@
+{
+  "tag": "ns-3.45",
+  "files": [
+    {
+      "file": "CMakeLists.txt",
+      "sha256": "3edb0ab0a786c176961b402f60876661d6a206a1abedd50d1dc774f7773ad607",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/CMakeLists.txt"
+    },
+    {
+      "file": "doc__installation__source__quick-start.rst",
+      "sha256": "d29c61dda053f21f54b9e9bfc324a0348b72f9b2172441006e26f29f7ae3c317",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/doc/installation/source/quick-start.rst"
+    },
+    {
+      "file": "src__applications__model__onoff-application.cc",
+      "sha256": "8bd632b7fbd8a3497eb463bfda86b434d475a531933498eff663a4e7a11b3159",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/src/applications/model/onoff-application.cc"
+    },
+    {
+      "file": "src__internet__model__tcp-l4-protocol.cc",
+      "sha256": "a1ad0ddad22ea1309358e6aec8b2447b708ded6f5c6d5fa732789887545ce440",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/src/internet/model/tcp-l4-protocol.cc"
+    },
+    {
+      "file": "src__internet__model__tcp-socket-base.cc",
+      "sha256": "09d2fcd56d74288e05749c4d54830afe5b4881374b337bffd7d0c5f28c865e7b",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/src/internet/model/tcp-socket-base.cc"
+    },
+    {
+      "file": "src__internet__model__tcp-socket.cc",
+      "sha256": "938ad35d10e13b72e1b19ad5308d8778992f52d801098fc2f56f48539d8bf0c9",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/src/internet/model/tcp-socket.cc"
+    },
+    {
+      "file": "src__traffic-control__helper__traffic-control-helper.cc",
+      "sha256": "4bfc804f56e55b9c2ab765ba1b60c71481cca0d38650b3f7191a7119d4ec8050",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/src/traffic-control/helper/traffic-control-helper.cc"
+    },
+    {
+      "file": "src__traffic-control__model__codel-queue-disc.cc",
+      "sha256": "f4a13d533342fa07b80e008024e00be6f652910d6c1894f3049688e5479963a8",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/src/traffic-control/model/codel-queue-disc.cc"
+    },
+    {
+      "file": "src__traffic-control__model__pie-queue-disc.cc",
+      "sha256": "89b046bca39bc2a78e9cf96ddbc085c9eff098ee89f89b131efe385c07d8f89c",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/src/traffic-control/model/pie-queue-disc.cc"
+    },
+    {
+      "file": "src__traffic-control__model__pie-queue-disc.h",
+      "sha256": "26a8e0781de6018ebac835eb19832ef3d7fccf0bede396e933c8667cec42d0f0",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/src/traffic-control/model/pie-queue-disc.h"
+    },
+    {
+      "file": "src__traffic-control__model__queue-disc.h",
+      "sha256": "f71658f04ed81025fa8f7018ee949ef76c677d3d676705cff108e20f2d53e30a",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/src/traffic-control/model/queue-disc.h"
+    },
+    {
+      "file": "src__traffic-control__model__red-queue-disc.cc",
+      "sha256": "839a951ba7670e504c90637431696f3cc1d8f9201ae7df271ceac5bb40581c1e",
+      "source": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/ns-3.45/src/traffic-control/model/red-queue-disc.cc"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+s-pie --scenario=2 --aqm=CoDel --flows=100 --duration=30 --payload=1000 --smallRate=1Mbps --largeRate=50Mbps --equalRate=10Mbps '--onTime=ns3::ExponentialRandomVariable[Mean=1]' '--offTime=ns3::ExponentialRandomVariable[Mean=1]' --accessRate=100Mbps --accessDelay=5ms --coreRate=50Mbps --coreDelay=20ms --limit=50p --output=result/scenario_2_run_29/CoDel/s2-CoDel-seed1-r29.csv --RngSeed=1 --RngRun=29 --ns3::CoDelQueueDisc::Target=5ms --ns3::CoDelQueueDisc::Interval=100ms --ns3::CoDelQueueDisc::MinBytes=1500 --ns3::CoDelQueueDisc::UseEcn=false --ns3::CoDelQueueDisc::UseL4s=false --ns3::TcpL4Protocol::SocketType=ns3::TcpNewReno --ns3::TcpL4Protocol::RecoveryType=ns3::TcpPrrRecovery --ns3::TcpSocket::SegmentSize=1000 --ns3::TcpSocket::InitialCwnd=10 --ns3::TcpSocket::SndBufSize=131072 --ns3::TcpSocket::RcvBufSize=131072 --ns3::TcpSocket::DelAckCount=2 --ns3::TcpSocket::DelAckTimeout=200ms --ns3::TcpSocketBase::UseEcn=Off
+
+Packets/Bytes received: 191113 / 200738276
+Packets/Bytes enqueued: 185765 / 195113180
+Packets/Bytes dequeued: 185765 / 195113180
+Packets/Bytes requeued: 0 / 0
+Packets/Bytes dropped: 5644 / 5936488
+Packets/Bytes dropped before enqueue: 5348 / 5625096
+  Overlimit drop: 5348 / 5625096
+Packets/Bytes dropped after dequeue: 296 / 311392
+  Target exceeded drop: 296 / 311392
+Packets/Bytes sent: 185469 / 194801788
+Packets/Bytes marked: 0 / 0
+
+
+Đã chạy xong. Goodput: result/scenario_2_run_29/CoDel/s2-CoDel-seed1-r29.csv
+metric,value
+scenario,2
+aqm,CoDel
+seed,1
+run,29
+start_s,0
+end_s,30
+goodput_mbps,46.768
+jain,0.9698937598915187
+mean_queue_packets,35.068688094866665
+mean_queue_bytes,36892.25987579973
+last_rtt_samples,55512
+last_rtt_mean_ms,85.84340322813085
+srtt_samples,77187
+srtt_mean_ms,80.73727933412363
+forward_wire_mbps,49.3745952
+forward_qdisc_drops,5570
+other_queue_drops,0
+drop: Overlimit drop,5281
+drop: Target exceeded drop,289

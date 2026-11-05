@@ -1,0 +1,36 @@
+s-pie --scenario=2 --aqm=Pie --flows=100 --duration=30 --payload=1000 --smallRate=1Mbps --largeRate=50Mbps --equalRate=10Mbps '--onTime=ns3::ExponentialRandomVariable[Mean=1]' '--offTime=ns3::ExponentialRandomVariable[Mean=1]' --accessRate=100Mbps --accessDelay=5ms --coreRate=50Mbps --coreDelay=20ms --limit=50p --output=result/scenario_2_run_19/Pie/s2-Pie-seed1-r19.csv --RngSeed=1 --RngRun=19 --ns3::PieQueueDisc::A=0.125 --ns3::PieQueueDisc::B=1.25 --ns3::PieQueueDisc::QueueDelayReference=5ms --ns3::PieQueueDisc::Tupdate=30ms --ns3::PieQueueDisc::Supdate=0s --ns3::PieQueueDisc::DequeueThreshold=10000 --ns3::PieQueueDisc::MaxBurstAllowance=100ms --ns3::PieQueueDisc::MeanPktSize=1000 --ns3::PieQueueDisc::UseDequeueRateEstimator=true --ns3::PieQueueDisc::UseCapDropAdjustment=true --ns3::PieQueueDisc::UseDerandomization=false --ns3::PieQueueDisc::UseEcn=false --ns3::PieQueueDisc::MarkEcnThreshold=0.1 --ns3::PieQueueDisc::UseL4s=false --ns3::TcpL4Protocol::SocketType=ns3::TcpNewReno --ns3::TcpL4Protocol::RecoveryType=ns3::TcpPrrRecovery --ns3::TcpSocket::SegmentSize=1000 --ns3::TcpSocket::InitialCwnd=10 --ns3::TcpSocket::SndBufSize=131072 --ns3::TcpSocket::RcvBufSize=131072 --ns3::TcpSocket::DelAckCount=2 --ns3::TcpSocket::DelAckTimeout=200ms --ns3::TcpSocketBase::UseEcn=Off
+
+Packets/Bytes received: 191057 / 200685364
+Packets/Bytes enqueued: 185414 / 194748928
+Packets/Bytes dequeued: 185414 / 194748928
+Packets/Bytes requeued: 0 / 0
+Packets/Bytes dropped: 5643 / 5936436
+Packets/Bytes dropped before enqueue: 5643 / 5936436
+  Forced drop: 5639 / 5932228
+  Unforced drop: 4 / 4208
+Packets/Bytes dropped after dequeue: 0 / 0
+Packets/Bytes sent: 185414 / 194748928
+Packets/Bytes marked: 0 / 0
+
+
+Đã chạy xong. Goodput: result/scenario_2_run_19/Pie/s2-Pie-seed1-r19.csv
+metric,value
+scenario,2
+aqm,Pie
+seed,1
+run,19
+start_s,0
+end_s,30
+goodput_mbps,46.61226666666666
+jain,0.9649188119650376
+mean_queue_packets,34.114428798233334
+mean_queue_bytes,35888.36407830173
+last_rtt_samples,54697
+last_rtt_mean_ms,85.59301241384354
+srtt_samples,76883
+srtt_mean_ms,80.37922081272843
+forward_wire_mbps,49.22057066666667
+forward_qdisc_drops,5587
+other_queue_drops,0
+drop: Forced drop,5583
+drop: Unforced drop,4

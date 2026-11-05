@@ -1,0 +1,20 @@
+metric,value
+scenario,2
+aqm,Red
+seed,1
+run,4
+start_s,0
+end_s,30
+goodput_mbps,41.61173333333333
+jain,0.9866086082187085
+mean_queue_packets,8.044444078833333
+mean_queue_bytes,8462.701178475867
+last_rtt_samples,49848
+last_rtt_mean_ms,81.11868078960039
+srtt_samples,66125
+srtt_mean_ms,77.79693944579206
+forward_wire_mbps,43.93117706666667
+forward_qdisc_drops,6078
+other_queue_drops,0
+drop: Dropped by internal queue,111
+drop: Unforced drop,5967

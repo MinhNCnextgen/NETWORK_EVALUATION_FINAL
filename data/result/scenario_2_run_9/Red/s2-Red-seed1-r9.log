@@ -1,0 +1,36 @@
+s-pie --scenario=2 --aqm=Red --flows=100 --duration=30 --payload=1000 --smallRate=1Mbps --largeRate=50Mbps --equalRate=10Mbps '--onTime=ns3::ExponentialRandomVariable[Mean=1]' '--offTime=ns3::ExponentialRandomVariable[Mean=1]' --accessRate=100Mbps --accessDelay=5ms --coreRate=50Mbps --coreDelay=20ms --limit=50p --output=result/scenario_2_run_9/Red/s2-Red-seed1-r9.csv --RngSeed=1 --RngRun=9 --ns3::RedQueueDisc::MinTh=5 --ns3::RedQueueDisc::MaxTh=15 --ns3::RedQueueDisc::QW=0.002 --ns3::RedQueueDisc::LInterm=50 --ns3::RedQueueDisc::MeanPktSize=1000 --ns3::RedQueueDisc::IdlePktSize=0 --ns3::RedQueueDisc::Wait=true --ns3::RedQueueDisc::Gentle=true --ns3::RedQueueDisc::ARED=false --ns3::RedQueueDisc::AdaptMaxP=false --ns3::RedQueueDisc::FengAdaptive=false --ns3::RedQueueDisc::NLRED=false --ns3::RedQueueDisc::TargetDelay=5ms --ns3::RedQueueDisc::Interval=500ms --ns3::RedQueueDisc::Top=0.5 --ns3::RedQueueDisc::Bottom=0 --ns3::RedQueueDisc::Alpha=0.01 --ns3::RedQueueDisc::Beta=0.9 --ns3::RedQueueDisc::FengAlpha=3 --ns3::RedQueueDisc::FengBeta=2 --ns3::RedQueueDisc::LastSet=0s --ns3::RedQueueDisc::Rtt=100ms --ns3::RedQueueDisc::Ns1Compat=false --ns3::RedQueueDisc::UseEcn=false --ns3::RedQueueDisc::UseHardDrop=true --ns3::TcpL4Protocol::SocketType=ns3::TcpNewReno --ns3::TcpL4Protocol::RecoveryType=ns3::TcpPrrRecovery --ns3::TcpSocket::SegmentSize=1000 --ns3::TcpSocket::InitialCwnd=10 --ns3::TcpSocket::SndBufSize=131072 --ns3::TcpSocket::RcvBufSize=131072 --ns3::TcpSocket::DelAckCount=2 --ns3::TcpSocket::DelAckTimeout=200ms --ns3::TcpSocketBase::UseEcn=Off
+
+Packets/Bytes received: 172788 / 181467376
+Packets/Bytes enqueued: 166460 / 174812320
+Packets/Bytes dequeued: 166460 / 174812320
+Packets/Bytes requeued: 0 / 0
+Packets/Bytes dropped: 6328 / 6655056
+Packets/Bytes dropped before enqueue: 6328 / 6655056
+  Dropped by internal queue: 179 / 188308
+  Unforced drop: 6149 / 6466748
+Packets/Bytes dropped after dequeue: 0 / 0
+Packets/Bytes sent: 166460 / 174812320
+Packets/Bytes marked: 0 / 0
+
+
+Đã chạy xong. Goodput: result/scenario_2_run_9/Red/s2-Red-seed1-r9.csv
+metric,value
+scenario,2
+aqm,Red
+seed,1
+run,9
+start_s,0
+end_s,30
+goodput_mbps,41.64346666666666
+jain,0.9871664213014465
+mean_queue_packets,8.183428558233333
+mean_queue_bytes,8608.956943828134
+last_rtt_samples,50362
+last_rtt_mean_ms,81.23962511417338
+srtt_samples,66667
+srtt_mean_ms,78.03737253234733
+forward_wire_mbps,43.98429866666667
+forward_qdisc_drops,6165
+other_queue_drops,0
+drop: Dropped by internal queue,179
+drop: Unforced drop,5986
